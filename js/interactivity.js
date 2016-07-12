@@ -6,16 +6,22 @@ jQuery("#credits").on("click", function() {
 });
 
 var bestScore=0;
-
+var numberScores = 0;
 
 function registerScore (score) {
   console.log(bestScore);
 if(score>bestScore){
   var playerName = prompt("What's your name?");
   var scoreEntry = "<li>" + playerName + ":" + score.toString() + "</li>";
+
   jQuery ("#scores").prepend(
     scoreEntry
   );
+//  if( numberScores==3){
+  //  jQuery("#scores").filter(function(){
+//return this.innerHTML.match(/^<li>)
+//    });
+  }
 bestScore=score;
 }
 }
