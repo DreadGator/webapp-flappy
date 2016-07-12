@@ -92,11 +92,9 @@ function update() {
   }
 
   function gameOver(){
-  if (score>25){registerScore(score);
-  }
-   score=0;
+    registerScore(score);
+    score=0;
     game.state.restart();
-
   }
 
   function clickHandler(event) {
