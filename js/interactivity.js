@@ -21,7 +21,7 @@ if(score>bestScore){
   //  jQuery("#scores").filter(function(){
 //return this.innerHTML.match(/^<li>)
 //    });
-  }
+  
 bestScore=score;
 }
 }
